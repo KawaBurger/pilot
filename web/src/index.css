@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #1a1b26;
+  --fg: #a9b1d6;
+  --accent: #7aa2f7;
+  --muted: #565f89;
+  --surface: #24283b;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  margin: 0;
+}
+
+.thinking-dots::after {
+  content: '';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: ''; }
+  25% { content: '.'; }
+  50% { content: '..'; }
+  75% { content: '...'; }
+}

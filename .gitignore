@@ -1,0 +1,17 @@
+# Binary
+/pilot
+
+# Frontend build output
+web/dist/
+web/node_modules/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.sw?
